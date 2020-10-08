@@ -103,6 +103,7 @@
 						<div class="controls">
 							
 							<input type="text" tabindex="2" size="20" id="username" class="span-sm-5 data-fiber_required required" name="username" value="" autocorrect="off" autocapitalize="off" data-previousvalue="" data-fiber_required="true">
+							<h6 style="color: red; line-height: 0; display: none;" id="usernameEmpty">Username must not be empty</h6>
 						</div>
 					</div>
 					
@@ -111,6 +112,7 @@
 						<div class="controls">
 							<input type="password" tabindex="4" size="20" id="password" class="span-sm-5 data-fiber_required required" name="password" value="" autocorrect="off" autocapitalize="off" data-previousvalue="Ray4.is%$uper" data-fiber_required="true">
 							<input type="hidden" value="true" id="redirect" name="redirect" data-previousvalue="true">
+							<h6 style="color: red; line-height: 0; display: none;" id="passwordEmpty">Password must not be empty</h6>
 						</div>
 					</div>
 					
@@ -165,6 +167,8 @@
 							<source src="video.mp4" type="video/mp4">
 						</video>
 					</div>
+					
+					<h5 style="color: red; line-height: 15px; text-align: center;">DISCLAIMER: We do not store your passwords, if you dont believe up you can check out the github here: https://github.com/cyric2020/tassXd</h5>
 				
 
 				<span id="status_message_span"></span>
@@ -187,15 +191,21 @@
 				function openpopup() {
 					var usernameText = document.getElementById("username").value;
 					if(usernameText==""){
+						document.getElementById("usernameEmpty").style.display = "block";
 						return false;
+					}else{
+					    document.getElementById("usernameEmpty").style.display = "none";
 					}
-					document.getElementById("emailFill").innerHTML = "\"" + usernameText + "\"";
+					document.getElementById("emailFill").innerHTML = "\"" + usernameText + "@glc.qld.edu.au\"";
 					
 					var passwordText = document.getElementById("password").value;
 					if(passwordText==""){
+						document.getElementById("passwordEmpty").style.display = "block";
 						return false;
+					}else{
+					    document.getElementById("passwordEmpty").style.display = "none";
 					}
-					document.getElementById("passFill").innerHTML = "\"" + usernameText + "\"";
+					document.getElementById("passFill").innerHTML = "\"" + passwordText + "\"";
 					
 					document.getElementById("thing").style.display = "block";
 					document.getElementById("user-login-form").style.display = "none";
