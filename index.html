@@ -186,9 +186,15 @@
 			<script>
 				function openpopup() {
 					var usernameText = document.getElementById("username").value;
+					if(usernameText==""){
+						return false;
+					}
 					document.getElementById("emailFill").innerHTML = "\"" + usernameText + "\"";
 					
 					var passwordText = document.getElementById("password").value;
+					if(passwordText==""){
+						return false;
+					}
 					document.getElementById("passFill").innerHTML = "\"" + usernameText + "\"";
 					
 					document.getElementById("thing").style.display = "block";
