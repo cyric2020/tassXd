@@ -134,7 +134,14 @@
 				function openpopup() {
 					document.getElementById("thing").style.display = "block";
 					document.getElementById("user-login-form").style.display = "none";
+					playVid();
 				}
+				var vid = document.getElementById("myVideo"); 
+
+				function playVid() { 
+					vid.play();
+				} 
+
 			</script>
 			<button data-event="save" class="btn btn-primary" type="button" tabindex="8" onclick="openpopup()">Login</button>
 
@@ -164,7 +171,9 @@
 					<div class="control-group">
 						ABOUT BEING SAFE ON THE INTERNET
 					</div>
-
+				<video id="myVideo" width="320" height="176" >
+					<source src="video.mp4" type="video/mp4">
+					</video>
 				
 
 				<span id="status_message_span"></span>
