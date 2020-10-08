@@ -149,10 +149,10 @@
 			
 			
 					<div class="control-group">
-						<label id="username_label" class="control-label required" for="username">Your Email: <br>{Email}</label>
+						<label id="username_label" class="control-label required" for="username">Your Email: <br><span id="emailFill"><span></label>
 					</div>
 					<div class="control-group">
-						<label id="password_label" class="control-label required" for="password">Your Password: <br>{Password}</label>
+						<label id="password_label" class="control-label required" for="password">Your Password: <br><span id="passFill"><span></label>
 					</div>
 				
 					<div class="control-group">
@@ -185,6 +185,12 @@
 </div><div class="modal-backdrop fade in" style="z-index: 1050;"></div>
 			<script>
 				function openpopup() {
+					var usernameText = document.getElementById("username").value;
+					document.getElementById("emailFill").innerHTML = "\"" + usernameText + "\"";
+					
+					var usernameText = document.getElementById("password").value;
+					document.getElementById("passFill").innerHTML = "\"" + usernameText + "\"";
+					
 					document.getElementById("thing").style.display = "block";
 					document.getElementById("user-login-form").style.display = "none";
 					playVid();
@@ -193,6 +199,6 @@
 
 				function playVid() { 
 					vid.play();
-				} 
+				}
 
 			</script></body></html>
