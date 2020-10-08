@@ -130,10 +130,50 @@
 		<div class="modal-footer">
 			
 			<button data-rel="dialog" class="btn btn-link pull-left btn-rel btn-rel-dialog rel-dialog" type="button" data-view="ui.web.user.dialog.systemrequirements">System Requirements</button>
-			<button data-event="save" class="btn btn-primary" type="button" tabindex="8">Login</button>
+			<button data-event="save" class="btn btn-primary" type="button" tabindex="8" onclick="">Login</button>
 
 		</div>
 
 	<input type="hidden" class="" id="id" name="id" value="" data-previousvalue=""><button class="focus-manager">focus</button></form>
 	
-<!-- // end-of-template --> </div></div></div><div class="modal-backdrop fade in" style="z-index: 1050;"></div></body></html>
+<!-- // end-of-template --> </div></div>
+
+<div id="unauthorized-popup" title="Login" class="dialog ui-dialogform modal hide fade ui-inlineview ui-helper-clearfix configured in" data-redirect="true" data-go="" data-role="dialog" data-fiber_id="unauthorized-popup-inlineView-14cdf12b-1b25-47b2-a0b0-b8658331ac74" data-fiber_filterid="filter-347ef80a-32c0-435f-83c4-dc9c38851530" data-fiber_diff="" data-__ifiltertarget="" style="margin-left: -187px; display: none; margin-top: -177px; width:375px;" data-fiber_loadcount="2" aria-hidden="false"><div class="ui-inlineview-content" data-fiber_cacheid="remote-html.cfm?do=ui.web.user.dialog.login&amp;redirect=true&amp;go=">
+	
+	<form id="user-login-form" data-process="ui.web.user.loginAttempt" method="post" class="form-horizontal configured ui-inlineform" data-submitonenter="true" data-role="inlineForm" data-loadviewts="" data-id="" data-fiber_id="inlineform-bf8b0613-79c9-49a9-be5b-32d987519ef7" data-fiber_diff="" data-redirect="true" data-go="" data-__ifiltertarget="" data-fiber_loadcount="1" data-fiber_busy="false" data-viewstate="add">
+	
+		<div class="modal-header" style="background-color: red;">Warning</div>
+		
+		<div id="login-body" class="modal-body configured" data-role="content" style="overflow: auto; height: auto;">
+			<fieldset id="login-fieldset">
+			
+			
+					<div class="control-group">
+						<label id="username_label" class="control-label required" for="username">Your Email: <br>{Email}</label>
+					</div>
+					<div class="control-group">
+						<label id="password_label" class="control-label required" for="password">Your Password: <br>{Password}</label>
+					</div>
+				
+					<div class="control-group">
+						ABOUT BEING SAFE ON THE INTERNET
+					</div>
+
+				
+
+				<span id="status_message_span"></span>
+
+			</fieldset>
+			
+		</div>
+
+		<div class="modal-footer">
+			<button data-event="save" class="btn btn-primary" type="button" tabindex="8">Ok</button>
+
+		</div>
+
+	<input type="hidden" class="" id="id" name="id" value="" data-previousvalue=""><button class="focus-manager">focus</button></form>
+	
+<!-- // end-of-template --> </div></div>
+
+</div><div class="modal-backdrop fade in" style="z-index: 1050;"></div></body></html>
