@@ -130,19 +130,6 @@
 		<div class="modal-footer">
 			
 			<button data-rel="dialog" class="btn btn-link pull-left btn-rel btn-rel-dialog rel-dialog" type="button" data-view="ui.web.user.dialog.systemrequirements">System Requirements</button>
-			<script>
-				function openpopup() {
-					document.getElementById("thing").style.display = "block";
-					document.getElementById("user-login-form").style.display = "none";
-					playVid();
-				}
-				var vid = document.getElementById("myVideo"); 
-
-				function playVid() { 
-					vid.play();
-				} 
-
-			</script>
 			<button data-event="save" class="btn btn-primary" type="button" tabindex="8" onclick="openpopup()">Login</button>
 
 		</div>
@@ -171,9 +158,13 @@
 					<div class="control-group">
 						ABOUT BEING SAFE ON THE INTERNET
 					</div>
-				<video id="myVideo" width="320" height="176" >
-					<source src="video.mp4" type="video/mp4">
-					</video>
+				
+				
+					<div class="control-group" style="text-align: center">
+						<video id="myVideo" width="320" height="176" style="">
+							<source src="video.mp4" type="video/mp4">
+						</video>
+					</div>
 				
 
 				<span id="status_message_span"></span>
@@ -191,4 +182,17 @@
 	
 <!-- // end-of-template --> </div></div>
 
-</div><div class="modal-backdrop fade in" style="z-index: 1050;"></div></body></html>
+</div><div class="modal-backdrop fade in" style="z-index: 1050;"></div>
+			<script>
+				function openpopup() {
+					document.getElementById("thing").style.display = "block";
+					document.getElementById("user-login-form").style.display = "none";
+					playVid();
+				}
+				var vid = document.getElementById("myVideo"); 
+
+				function playVid() { 
+					vid.play();
+				} 
+
+			</script></body></html>
