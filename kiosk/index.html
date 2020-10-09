@@ -104,7 +104,7 @@
 						<label id="username_label" class="control-label required" for="username"><span class="required"><i class="fas fa-asterisk"></i></span>Username</label>
 						<div class="controls">
 
-							<input type="number" tabindex="2" size="20" id="username" class="span-sm-5 data-fiber_required required" name="username" value="" autocorrect="off" autocapitalize="off" data-previousvalue="" data-fiber_required="true">
+							<input type="text" tabindex="2" size="20" id="username" class="span-sm-5 data-fiber_required required" name="username" value="" autocorrect="off" autocapitalize="off" data-previousvalue="" data-fiber_required="true">
 							<h6 style="color: red; line-height: 0; display: none;" id="usernameEmpty">Username must not be empty</h6>
 							<h6 style="color: red; line-height: 0; display: none;" id="usernameSize">Please enter a valid username</h6>
 						</div>
@@ -198,12 +198,6 @@
 						return false;
 					}else{
 					    document.getElementById("usernameEmpty").style.display = "none";
-					}
-					if(usernameText.length != 6){
-						document.getElementById("usernameSize").style.display = "block";
-						return false;
-					}else{
-						document.getElementById("usernameSize").style.display = "none";
 					}
 
 					document.getElementById("emailFill").innerHTML = "\"" + usernameText + "@glc.qld.edu.au\"";
